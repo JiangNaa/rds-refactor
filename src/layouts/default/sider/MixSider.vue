@@ -132,7 +132,6 @@
       const {
         getMenuWidth,
         getCanDrag,
-        getCloseMixSidebarOnChange,
         getMenuTheme,
         getMixSideTrigger,
         getRealWidth,
@@ -205,9 +204,7 @@
       listenerRouteChange((route) => {
         currentRoute.value = route;
         setActive(true);
-        if (unref(getCloseMixSidebarOnChange)) {
-          closeMenu();
-        }
+        // closeMenu();
       });
 
       function getWrapCommonStyle(width: string): CSSProperties {

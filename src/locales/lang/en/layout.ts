@@ -64,18 +64,14 @@ export default {
     interfaceFunction: 'Interface function',
     interfaceDisplay: 'Interface display',
     animation: 'Animation',
-    splitMenu: 'Split menu',
-    closeMixSidebarOnChange: 'Switch page to close menu',
 
     sysTheme: 'System theme',
     headerTheme: 'Header theme',
     sidebarTheme: 'Menu theme',
 
-    menuDrag: 'Drag Sidebar',
     menuSearch: 'Menu search',
     menuAccordion: 'Sidebar accordion',
     menuCollapse: 'Collapse menu',
-    collapseMenuDisplayName: 'Collapse menu display name',
     topMenuLayout: 'Top menu layout',
     menuCollapseButton: 'Menu collapse button',
     contentMode: 'Content area width',
@@ -105,10 +101,7 @@ export default {
     fixedHeader: 'Fixed header',
     fixedSideBar: 'Fixed Sidebar',
 
-    mixSidebarTrigger: 'Mixed menu Trigger',
     triggerHover: 'Hover',
-    triggerClick: 'Click',
-
-    mixSidebarFixed: 'Fixed expanded menu',
+    triggerClick: 'Click'
   },
 };

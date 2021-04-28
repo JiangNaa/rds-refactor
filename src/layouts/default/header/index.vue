@@ -1,5 +1,12 @@
 <template>
-  <Header :class="getHeaderClass">
+  <Header :class="getHeaderClass" style="
+    position: fixed;
+    z-index: 999;
+    height: 50px;
+    font-size: 12px;
+    line-height: 1.5;
+    background-color: var(--cb-color-bg-primary,#fff);
+    box-shadow: 0 2px 4px 0 var(--cb-color-shadow,rgba(0,0,0,0.16));">
     <!-- left start -->
     <div :class="`${prefixCls}-left`">
       <!-- logo -->

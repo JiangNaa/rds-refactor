@@ -53,10 +53,6 @@ export function useMenuSetting() {
 
   const getTopMenuAlign = computed(() => appStore.getMenuSetting.topMenuAlign);
 
-  const getCloseMixSidebarOnChange = computed(
-    () => appStore.getMenuSetting.closeMixSidebarOnChange
-  );
-
   const getIsSidebarType = computed(() => unref(getMenuType) === MenuTypeEnum.SIDEBAR);
 
   const getIsTopMenu = computed(() => unref(getMenuType) === MenuTypeEnum.TOP_MENU);
@@ -158,7 +154,6 @@ export function useMenuSetting() {
     getShowSidebar,
     getIsMixMode,
     getIsMixSidebar,
-    getCloseMixSidebarOnChange,
     getMixSideTrigger,
     getMixSideFixed,
     mixSideHasChildren,

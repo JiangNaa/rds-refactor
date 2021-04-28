@@ -192,5 +192,5 @@
   ],
   "terminal.integrated.sendKeybindingsToShell": true,
   "editor.fontLigatures": null,
-  "editor.fontSize": 22
+  "editor.fontSize": 15
 }

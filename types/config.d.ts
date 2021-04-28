@@ -26,7 +26,6 @@ export interface MenuSetting {
   topMenuAlign: 'start' | 'center' | 'end';
   trigger: TriggerEnum;
   accordion: boolean;
-  closeMixSidebarOnChange: boolean;
   collapsedShowTitle: boolean;
   mixSideTrigger: MixSidebarTriggerEnum;
   mixSideFixed: boolean;

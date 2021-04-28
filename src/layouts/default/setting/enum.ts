@@ -16,20 +16,16 @@ export enum HandlerEnum {
   CHANGE_THEME_COLOR,
   CHANGE_THEME,
   // menu
-  MENU_HAS_DRAG,
   MENU_ACCORDION,
   MENU_TRIGGER,
   MENU_TOP_ALIGN,
   MENU_COLLAPSED,
-  MENU_COLLAPSED_SHOW_TITLE,
   MENU_WIDTH,
   MENU_SHOW_SIDEBAR,
   MENU_THEME,
-  MENU_SPLIT,
   MENU_FIXED,
   MENU_CLOSE_MIX_SIDEBAR_ON_CHANGE,
   MENU_TRIGGER_MIX_SIDEBAR,
-  MENU_FIXED_MIX_SIDEBAR,
 
   // header
   HEADER_SHOW,
@@ -59,16 +55,6 @@ export enum HandlerEnum {
   OPEN_ROUTE_TRANSITION,
 }
 
-export const contentModeOptions = [
-  {
-    value: ContentEnum.FULL,
-    label: t('layout.setting.contentModeFull'),
-  },
-  {
-    value: ContentEnum.FIXED,
-    label: t('layout.setting.contentModeFixed'),
-  },
-];
 
 export const topMenuAlignOptions = [
   {

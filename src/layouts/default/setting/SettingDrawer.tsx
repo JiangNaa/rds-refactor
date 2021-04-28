@@ -25,7 +25,6 @@ import { baseHandler } from './handler';
 
 import {
   HandlerEnum,
-  contentModeOptions,
   topMenuAlignOptions,
   getMenuTriggerOptions,
   routerTransitionOptions,
@@ -73,7 +72,6 @@ export default defineComponent({
       getCollapsedShowTitle,
       getMenuFixed,
       getCollapsed,
-      getCanDrag,
       getTopMenuAlign,
       getAccordion,
       getMenuWidth,
@@ -81,7 +79,6 @@ export default defineComponent({
       getIsTopMenu,
       getSplit,
       getIsMixSidebar,
-      getCloseMixSidebarOnChange,
       getMixSideTrigger,
       getMixSideFixed,
     } = useMenuSetting();
@@ -161,36 +158,11 @@ export default defineComponent({
 
       return (
         <>
-          <SwitchItem
-            title={t('layout.setting.splitMenu')}
-            event={HandlerEnum.MENU_SPLIT}
-            def={unref(getSplit)}
-            disabled={!unref(getShowMenuRef) || unref(getMenuType) !== MenuTypeEnum.MIX}
-          />
-          <SwitchItem
-            title={t('layout.setting.mixSidebarFixed')}
-            event={HandlerEnum.MENU_FIXED_MIX_SIDEBAR}
-            def={unref(getMixSideFixed)}
-            disabled={!unref(getIsMixSidebar)}
-          />
 
-          <SwitchItem
-            title={t('layout.setting.closeMixSidebarOnChange')}
-            event={HandlerEnum.MENU_CLOSE_MIX_SIDEBAR_ON_CHANGE}
-            def={unref(getCloseMixSidebarOnChange)}
-            disabled={!unref(getIsMixSidebar)}
-          />
           <SwitchItem
             title={t('layout.setting.menuCollapse')}
             event={HandlerEnum.MENU_COLLAPSED}
             def={unref(getCollapsed)}
-            disabled={!unref(getShowMenuRef)}
-          />
-
-          <SwitchItem
-            title={t('layout.setting.menuDrag')}
-            event={HandlerEnum.MENU_HAS_DRAG}
-            def={unref(getCanDrag)}
             disabled={!unref(getShowMenuRef)}
           />
           <SwitchItem
@@ -207,23 +179,10 @@ export default defineComponent({
           />
 
           <SwitchItem
-            title={t('layout.setting.collapseMenuDisplayName')}
-            event={HandlerEnum.MENU_COLLAPSED_SHOW_TITLE}
-            def={unref(getCollapsedShowTitle)}
-            disabled={!unref(getShowMenuRef) || !unref(getCollapsed) || unref(getIsMixSidebar)}
-          />
-
-          <SwitchItem
             title={t('layout.setting.fixedHeader')}
             event={HandlerEnum.HEADER_FIXED}
             def={unref(getHeaderFixed)}
             disabled={!unref(getShowHeader)}
-          />
-          <SwitchItem
-            title={t('layout.setting.fixedSideBar')}
-            event={HandlerEnum.MENU_FIXED}
-            def={unref(getMenuFixed)}
-            disabled={!unref(getShowMenuRef) || unref(getIsMixSidebar)}
           />
           <SelectItem
             title={t('layout.setting.mixSidebarTrigger')}
@@ -250,12 +209,6 @@ export default defineComponent({
             def={triggerDef}
             options={triggerOptions}
             disabled={!unref(getShowMenuRef) || unref(getIsMixSidebar)}
-          />
-          <SelectItem
-            title={t('layout.setting.contentMode')}
-            event={HandlerEnum.CONTENT_MODE}
-            def={unref(getContentMode)}
-            options={contentModeOptions}
           />
           <InputNumberItem
             title={t('layout.setting.autoScreenLock')}

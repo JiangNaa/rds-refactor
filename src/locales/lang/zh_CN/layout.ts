@@ -64,18 +64,14 @@ export default {
     interfaceFunction: '界面功能',
     interfaceDisplay: '界面显示',
     animation: '动画',
-    splitMenu: '分割菜单',
-    closeMixSidebarOnChange: '切换页面关闭菜单',
 
     sysTheme: '系统主题',
     headerTheme: '顶栏主题',
     sidebarTheme: '菜单主题',
 
-    menuDrag: '侧边菜单拖拽',
     menuSearch: '菜单搜索',
     menuAccordion: '侧边菜单手风琴模式',
     menuCollapse: '折叠菜单',
-    collapseMenuDisplayName: '折叠菜单显示名称',
     topMenuLayout: '顶部菜单布局',
     menuCollapseButton: '菜单折叠按钮',
     contentMode: '内容区域宽度',
@@ -103,12 +99,8 @@ export default {
     notAutoScreenLock: '不自动锁屏',
 
     fixedHeader: '固定header',
-    fixedSideBar: '固定Sidebar',
 
-    mixSidebarTrigger: '混合菜单触发方式',
     triggerHover: '悬停',
-    triggerClick: '点击',
-
-    mixSidebarFixed: '固定展开菜单',
+    triggerClick: '点击'
   },
 };
