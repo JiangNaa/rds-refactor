@@ -1,3 +1,7 @@
+# 2.3.0 (2021-04-29)
+
+
+
 # [2.3.0](https://github.com/anncwb/vue-vben-admin/compare/v2.2.0...v2.3.0) (2021-04-10)
 
 ### Bug Fixes
