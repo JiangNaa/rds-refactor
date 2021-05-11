@@ -9,45 +9,46 @@ export type Component<T extends any = any> =
   | (() => Promise<T>);
 
 export interface RouteMeta {
-  // title
+  // 路由title  一般必填
   title: string;
-  // Whether to ignore permissions
+  // 是否忽略权限，只在权限模式为Role的时候有效
   ignoreAuth?: boolean;
-  // role info
+  // 可以访问的角色，只在权限模式为Role的时候有效
   roles?: RoleEnum[];
-  // Whether not to cache
+  // 是否忽略KeepAlive缓存
   ignoreKeepAlive?: boolean;
-  // Is it fixed on tab
+  // 是否固定标签
   affix?: boolean;
-  // icon on tab
+  // 图标，也是菜单图标
   icon?: string;
-
+  // 内嵌iframe的地址
   frameSrc?: string;
 
-  // current page transition
+  // 指定该路由切换的动画名
   transitionName?: string;
 
-  // Whether the route has been dynamically added
+  // 隐藏该路由在面包屑上面的显示
   hideBreadcrumb?: boolean;
 
-  // Hide submenu
+  // 隐藏子菜单
   hideChildrenInMenu?: boolean;
 
-  // Carrying parameters
+  // 如果该路由会携带参数，且需要在tab页上面显示。则需要设置为true
   carryParam?: boolean;
 
-  // Used internally to mark single-level menus
+  // 在内部用于标记单级菜单
   single?: boolean;
 
-  // Currently active menu
+  // 当前激活的菜单。用于配置详情页时左侧激活的菜单路径
   currentActiveMenu?: string;
 
-  // Never show in tab
+  // 当前路由不在标签页显示
   hideTab?: boolean;
 
-  // Never show in menu
+  // 当前路由不再菜单显示
   hideMenu?: boolean;
 
+  // 外链
   isLink?: boolean;
 }
 
