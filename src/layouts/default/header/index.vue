@@ -23,7 +23,6 @@
         :theme="getHeaderTheme"
         :sider="false"
       />
-      <LayoutBreadcrumb v-if="getShowContent && getShowBread" :theme="getHeaderTheme" />
     </div>
     <!-- left end -->
 
@@ -81,7 +80,7 @@
   import { SettingButtonPositionEnum } from '/@/enums/appEnum';
   import { AppLocalePicker } from '/@/components/Application';
 
-  import { UserDropDown, LayoutBreadcrumb, FullScreen, Notify, ErrorAction } from './components';
+  import { UserDropDown, FullScreen, Notify, ErrorAction } from './components';
   import { useAppInject } from '/@/hooks/web/useAppInject';
   import { useDesign } from '/@/hooks/web/useDesign';
 
@@ -94,7 +93,6 @@
       Header: Layout.Header,
       AppLogo,
       LayoutTrigger,
-      LayoutBreadcrumb,
       LayoutMenu,
       UserDropDown,
       AppLocalePicker,

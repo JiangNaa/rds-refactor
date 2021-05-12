@@ -88,6 +88,7 @@ export const usePermissionStore = defineStore({
       const { t } = useI18n();
       const userStore = useUserStore();
       const appStore = useAppStoreWidthOut();
+      console.log(userStore)
 
       let routes: AppRouteRecordRaw[] = [];
       const roleList = toRaw(userStore.getRoleList);

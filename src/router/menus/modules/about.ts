@@ -7,5 +7,9 @@ const about: MenuModule = {
     path: '/about/index',
     name: t('routes.dashboard.about'),
   },
+  menus: {
+    path: '/about/index',
+    name: t('routes.dashboard.about'),
+  },
 };
 export default about;

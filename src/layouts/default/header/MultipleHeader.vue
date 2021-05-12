@@ -69,18 +69,18 @@
 
       const getPlaceholderDomStyle = computed(
         (): CSSProperties => {
-          let height = 0;
-          if (
-            (unref(getShowFullHeaderRef) || !unref(getSplit)) &&
-            unref(getShowHeader) &&
-            !unref(getFullContent)
-          ) {
-            height += HEADER_HEIGHT;
-          }
-          if (unref(getShowMultipleTab) && !unref(getFullContent)) {
-            height += TABS_HEIGHT;
-          }
-          headerHeightRef.value = height;
+          let height = 50;
+          // if (
+          //   (unref(getShowFullHeaderRef) || !unref(getSplit)) &&
+          //   unref(getShowHeader) &&
+          //   !unref(getFullContent)
+          // ) {
+          //   height += HEADER_HEIGHT;
+          // }
+          // if (unref(getShowMultipleTab) && !unref(getFullContent)) {
+          //   height += TABS_HEIGHT;
+          // }
+          // headerHeightRef.value = height;
           return {
             height: `${height}px`,
           };
@@ -120,7 +120,7 @@
     }
 
     &--fixed {
-      position: fixed;
+      // position: fixed;
       top: 0;
       z-index: @multiple-tab-fixed-z-index;
       width: 100%;

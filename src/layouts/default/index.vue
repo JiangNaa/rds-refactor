@@ -59,17 +59,20 @@
   });
 </script>
 <style lang="less">
+  .ant-layout {
+    background: #fff;
+  }
   @prefix-cls: ~'@{namespace}-default-layout';
-
   .@{prefix-cls} {
     display: flex;
     width: 100%;
     min-height: 100%;
-    background-color: @content-bg;
+    background-color: #fff;
     flex-direction: column;
 
     > .ant-layout {
       min-height: 100%;
+      background: #fff;
     }
 
     &-main {
