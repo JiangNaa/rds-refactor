@@ -23,14 +23,6 @@ const charts: AppRouteModule = {
       redirect: '/charts/echarts/map',
       children: [
         {
-          path: 'map',
-          name: 'Map',
-          component: () => import('/@/views/demo/charts/Map.vue'),
-          meta: {
-            title: t('routes.demo.charts.map'),
-          },
-        },
-        {
           path: 'line',
           name: 'Line',
           component: () => import('/@/views/demo/charts/Line.vue'),

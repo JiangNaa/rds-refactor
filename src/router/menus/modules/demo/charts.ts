@@ -13,10 +13,6 @@ const menu: MenuModule = {
         name: 'Echarts',
         children: [
           {
-            path: 'map',
-            name: t('routes.demo.charts.map'),
-          },
-          {
             path: 'line',
             name: t('routes.demo.charts.line'),
           },

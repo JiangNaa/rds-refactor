@@ -185,50 +185,6 @@ const menu: MenuModule = {
         ],
       },
       {
-        name: t('routes.demo.editor.editor'),
-        path: 'editor',
-        tag: {
-          dot: true,
-        },
-        children: [
-          {
-            path: 'json',
-            name: t('routes.demo.editor.jsonEditor'),
-            tag: {
-              content: 'new',
-            },
-          },
-          {
-            path: 'markdown',
-            name: t('routes.demo.editor.markdown'),
-            children: [
-              {
-                path: 'index',
-                name: t('routes.demo.editor.tinymceBasic'),
-              },
-              {
-                path: 'editor',
-                name: t('routes.demo.editor.tinymceForm'),
-              },
-            ],
-          },
-          {
-            path: 'tinymce',
-            name: t('routes.demo.editor.tinymce'),
-            children: [
-              {
-                path: 'index',
-                name: t('routes.demo.editor.tinymceBasic'),
-              },
-              {
-                path: 'editor',
-                name: t('routes.demo.editor.tinymceForm'),
-              },
-            ],
-          },
-        ],
-      },
-      {
         path: 'scroll',
         name: t('routes.demo.comp.scroll'),
         children: [
