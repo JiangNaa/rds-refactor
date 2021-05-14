@@ -33,8 +33,6 @@
   },
   "dependencies": {
     "@iconify/iconify": "^2.0.0-rc.6",
-    "@logicflow/core": "^0.3.4",
-    "@logicflow/extension": "^0.3.4",
     "@vueuse/core": "^4.9.0",
     "@zxcvbn-ts/core": "^0.3.0",
     "ant-design-vue": "^2.1.3",

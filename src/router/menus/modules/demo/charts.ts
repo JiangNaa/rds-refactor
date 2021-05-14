@@ -9,19 +9,6 @@ const menu: MenuModule = {
 
     children: [
       {
-        path: 'aMap',
-        name: t('routes.demo.charts.aMap'),
-      },
-
-      {
-        path: 'baiduMap',
-        name: t('routes.demo.charts.baiduMap'),
-      },
-      {
-        path: 'googleMap',
-        name: t('routes.demo.charts.googleMap'),
-      },
-      {
         path: 'echarts',
         name: 'Echarts',
         children: [
