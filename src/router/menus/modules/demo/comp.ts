@@ -154,10 +154,6 @@ const menu: MenuModule = {
         name: t('routes.demo.comp.desc'),
       },
       {
-        path: 'qrcode',
-        name: t('routes.demo.comp.qrcode'),
-      },
-      {
         path: 'strength-meter',
         name: t('routes.demo.comp.strength'),
       },
