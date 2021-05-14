@@ -35,12 +35,12 @@
       }
       function handleDownloadByUrl() {
         downloadByUrl({
-          url: 'https://codeload.github.com/anncwb/vue-vben-admin-doc/zip/master',
+          url: 'https://codeload.github.com/anncwb/vue-rds-admin-doc/zip/master',
           target: '_self',
         });
 
         downloadByUrl({
-          url: 'https://vebn.oss-cn-beijing.aliyuncs.com/vben/logo.png',
+          url: 'https://vebn.oss-cn-beijing.aliyuncs.com/rds/logo.png',
           target: '_self',
         });
       }

@@ -1,8 +1,8 @@
 {
-  "name": "vben-admin",
+  "name": "rds-admin",
   "version": "2.3.0",
   "author": {
-    "name": "vben",
+    "name": "rds",
     "email": "anncwb@126.com",
     "url": "https://github.com/anncwb"
   },
@@ -131,13 +131,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anncwb/vue-vben-admin.git"
+    "url": "git+https://github.com/anncwb/vue-rds-admin.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/anncwb/vue-vben-admin/issues"
+    "url": "https://github.com/anncwb/vue-rds-admin/issues"
   },
-  "homepage": "https://github.com/anncwb/vue-vben-admin",
+  "homepage": "https://github.com/anncwb/vue-rds-admin",
   "engines": {
     "node": "^12 || >=14"
   }

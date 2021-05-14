@@ -1,5 +1,5 @@
 <!--
- * @Author: Vben
+ * @Author: rds
  * @Description: Arrow component with animation
 -->
 <template>

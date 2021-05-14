@@ -22,7 +22,7 @@ RDS 重构
 
 在 Gitpod（适用于 GitHub 的免费在线开发环境）中打开项目，并立即开始编码.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/anncwb/vue-vben-admin)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/anncwb/vue-rds-admin)
 
 
 ## 准备
@@ -47,7 +47,7 @@ git clone https://github.com/JiangNaa/rds-refactor.git
 - 安装依赖
 
 ```bash
-cd vue-vben-admin
+cd vue-rds-admin
 
 yarn install
 
