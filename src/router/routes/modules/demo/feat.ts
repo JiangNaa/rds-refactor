@@ -30,14 +30,6 @@ const feat: AppRouteModule = {
       },
     },
     {
-      path: 'print',
-      name: 'Print',
-      component: () => import('/@/views/demo/feat/print/index.vue'),
-      meta: {
-        title: t('routes.demo.feat.print'),
-      },
-    },
-    {
       path: 'tabs',
       name: 'TabsDemo',
       component: () => import('/@/views/demo/feat/tabs/index.vue'),
@@ -154,14 +146,6 @@ const feat: AppRouteModule = {
       component: () => import('/@/views/demo/feat/msg/index.vue'),
       meta: {
         title: t('routes.demo.feat.msg'),
-      },
-    },
-    {
-      path: 'watermark',
-      name: 'WatermarkDemo',
-      component: () => import('/@/views/demo/feat/watermark/index.vue'),
-      meta: {
-        title: t('routes.demo.feat.watermark'),
       },
     },
     {
